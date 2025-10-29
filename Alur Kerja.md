@@ -1,0 +1,2 @@
+onat -> ngoding
+belin -> tidur
