@@ -101,7 +101,7 @@ Peneliti memakai simulasi matematika (Markov process) untuk melihat:
 1. Seiring waktu, berapa banyak I, T, dan U yang muncul?
 2. Bagaimana perubahan insentif mengubah perilaku kelompok?
 3. Apakah trust bisa naik? Dalam kondisi apa?
-4. Reward lebih efektif atau punishment?\
+4. Reward lebih efektif atau punishment?
 
 Mereka coba berbagai kondisi:
 - δ = besar insentif
@@ -109,4 +109,18 @@ Mereka coba berbagai kondisi:
 - N = ukuran grup
 - α = mix reward-punishment (pure reward, pure punishment, campuran)
 
+### **7. Hasil Simulasi**
+Perbedaan nilai M (variasi 3, 5, 7) dengan δ konstan\
+M adalah _threshold_ (ambang batas) jumlah trustee jujur (NT) yang menentukan kapan sistem memakai reward atau punishment.\
+Artinya:\
+- Jika NT < M → sistem memberi reward ke trustee jujur (T).
+- Jika NT ≥ M → sistem memberi punishment ke trustee tidak jujur (U).
 
+Saat M = 0:\
+Ambang batas paling rendah. NT ≥ 0 selalu benar → punishment langsung aktif sejak awal.\
+Tapi karena delta kecil, punishment kurang efektif\
+U (untrustworthy) masih banyak → sistem tetap tidak jujur\
+I (investor) paling jarang muncul\
+T naik dikit, tapi ga signifikan\
+
+Saat M = 3:\
