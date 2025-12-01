@@ -134,6 +134,13 @@ Hasilnya:
 
 Untuk insentif kecil, lebih baik sistem memakai reward daripada punishment.\
 Kalau insentif besar, punishment lebih kuat daripada reward untuk menghancurkan U.
+Kalau δ kecil → ada sedikit dana\
+→ cukup untuk memberi hadiah kecil\
+→ reward lebih efektif dari punishment
+
+Kalau δ besar → dananya banyak\
+→ punishment jadi keras dan efektif\
+→ U dihancurkan
 
 **c. Perbedaan nilai M (variasi 3, 5, 7) dengan δ konstan**\
 M adalah _threshold_ (ambang batas) jumlah trustee jujur (NT) yang menentukan kapan sistem memakai reward atau punishment.\
