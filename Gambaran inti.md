@@ -110,9 +110,34 @@ Mereka coba berbagai kondisi:
 - α = mix reward-punishment (pure reward, pure punishment, campuran)
 
 ### **7. Hasil Simulasi**
-Perbedaan nilai M (variasi 3, 5, 7) dengan δ konstan\
+a. Kalau δ = 0 (tidak ada insentif sama sekali):\
+Tidak ada reward dan tidak ada punishment.\
+Tidak ada mekanisme yang mendorong orang untuk jujur.\
+Hasilnya:
+- populasi didominasi oleh U (untrustworthy)\
+- hampir tidak ada Investor (I)\
+- T muncul sedikit tapi kalah oleh U
+
+b. δ = 2.5 dan δ = 3\
+Ketika δ mulai sedikit naik (ada insentif kecil): Reward menjadi mekanisme yang dominan kalau M besar.\
+Trustee jujur (T) mendapatkan hadiah tambahan → mereka jadi kompetitif.\
+U mulai menurun\
+I dan T mulai bertambah
+
+Ketika δ makin besar (insentif besar):\
+Reward jadi kurang efektif\
+Punishment jadi sangat kuat (karena “hukuman” yang diambil dari δ besar)\
+M kecil (punishment aktif) langsung menghajar U keras\
+Hasilnya:
+- U turun drastis
+- I dan T bisa hidup bersama (coexistence)
+
+Untuk insentif kecil, lebih baik sistem memakai reward daripada punishment.\
+Kalau insentif besar, punishment lebih kuat daripada reward untuk menghancurkan U.
+
+b. Perbedaan nilai M (variasi 3, 5, 7) dengan δ konstan\
 M adalah _threshold_ (ambang batas) jumlah trustee jujur (NT) yang menentukan kapan sistem memakai reward atau punishment.\
-Artinya:\
+Artinya:
 - Jika NT < M → sistem memberi reward ke trustee jujur (T).
 - Jika NT ≥ M → sistem memberi punishment ke trustee tidak jujur (U).
 
@@ -121,6 +146,18 @@ Ambang batas paling rendah. NT ≥ 0 selalu benar → punishment langsung aktif 
 Tapi karena delta kecil, punishment kurang efektif\
 U (untrustworthy) masih banyak → sistem tetap tidak jujur\
 I (investor) paling jarang muncul\
-T naik dikit, tapi ga signifikan\
+T naik dikit, tapi ga signifikan
 
 Saat M = 3:\
+Reward mulai sering aktif\
+T meningkat\
+U turun (tapi belum habis)\
+I mulai muncul
+
+Saat M = 7:\
+hampir selalu reward\
+Trustee jujur sering dapat hadiah\
+T naik banyak\
+I juga naik (karena investor dapat return lebih stabil)\
+U makin kecil
+
