@@ -96,10 +96,16 @@ Efek diamati: µ besar → distribusi mendekati 1/3 tiap strategi; µ kecil → 
 **9. Investment amount — tv**\
 Peran: unit investasi yang dikirim investor; biasanya set ke tv = 1 di eksperimen (konvensi).
 
-### **6. Kombinasi & Kasus Khusus yang Diuji**
-1. δ kecil vs δ besar: membandingkan efektivitas reward (lebih baik saat δ kecil) vs punishment (lebih baik saat δ besar).
-2. Pure reward (α=0) vs pure punishment (α=1) vs mixed (0<α<1).
-3. M relatif terhadap N: termasuk kasus M > 3N/4 (paper menunjukkan threshold di atas 3/4N membuat perubahan M kurang berpengaruh).
-4. Variasi N sambil pegang δ konstan: lihat bagaimana ukuran grup mengubah dinamika walau insentif tetap.
-5. Sensitivitas terhadap RU/RT: menguji robustness hasil terhadap beda keuntungan T vs U.
-6. Sensitivitas ω & µ: lihat transisi dari drift-dominated → selection-dominated.
+### **6. APA YANG DIANALISIS?**
+Peneliti memakai simulasi matematika (Markov process) untuk melihat:
+1. Seiring waktu, berapa banyak I, T, dan U yang muncul?
+2. Bagaimana perubahan insentif mengubah perilaku kelompok?
+3. Apakah trust bisa naik? Dalam kondisi apa?
+4. Reward lebih efektif atau punishment?
+Mereka coba berbagai kondisi:
+- δ = besar insentif
+- M = threshold kapan insentif berubah
+- N = ukuran grup
+- α = mix reward-punishment (pure reward, pure punishment, campuran)
+
+
