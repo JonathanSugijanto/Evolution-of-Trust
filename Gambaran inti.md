@@ -110,15 +110,15 @@ Mereka coba berbagai kondisi:
 - α = mix reward-punishment (pure reward, pure punishment, campuran)
 
 ### **7. Hasil Simulasi**
-a. Kalau δ = 0 (tidak ada insentif sama sekali):\
+**a. Kalau δ = 0** (tidak ada insentif sama sekali):\
 Tidak ada reward dan tidak ada punishment.\
 Tidak ada mekanisme yang mendorong orang untuk jujur.\
 Hasilnya:
-- populasi didominasi oleh U (untrustworthy)\
-- hampir tidak ada Investor (I)\
+- populasi didominasi oleh U (untrustworthy)
+- hampir tidak ada Investor (I)
 - T muncul sedikit tapi kalah oleh U
 
-b. δ = 2.5 dan δ = 3\
+**b. δ = 2.5 dan δ = 3**\
 Ketika δ mulai sedikit naik (ada insentif kecil): Reward menjadi mekanisme yang dominan kalau M besar.\
 Trustee jujur (T) mendapatkan hadiah tambahan → mereka jadi kompetitif.\
 U mulai menurun\
@@ -135,7 +135,7 @@ Hasilnya:
 Untuk insentif kecil, lebih baik sistem memakai reward daripada punishment.\
 Kalau insentif besar, punishment lebih kuat daripada reward untuk menghancurkan U.
 
-b. Perbedaan nilai M (variasi 3, 5, 7) dengan δ konstan\
+**c. Perbedaan nilai M (variasi 3, 5, 7) dengan δ konstan**\
 M adalah _threshold_ (ambang batas) jumlah trustee jujur (NT) yang menentukan kapan sistem memakai reward atau punishment.\
 Artinya:
 - Jika NT < M → sistem memberi reward ke trustee jujur (T).
@@ -159,5 +159,6 @@ hampir selalu reward\
 Trustee jujur sering dapat hadiah\
 T naik banyak\
 I juga naik (karena investor dapat return lebih stabil)\
-U makin kecil
+U makin kecil\
+titik stasioner pindah menjauh dari sudut U
 
