@@ -102,6 +102,7 @@ Peneliti memakai simulasi matematika (Markov process) untuk melihat:
 2. Bagaimana perubahan insentif mengubah perilaku kelompok?
 3. Apakah trust bisa naik? Dalam kondisi apa?
 4. Reward lebih efektif atau punishment?\
+
 Mereka coba berbagai kondisi:
 - δ = besar insentif
 - M = threshold kapan insentif berubah
