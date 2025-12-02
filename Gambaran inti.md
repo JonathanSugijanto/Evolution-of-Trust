@@ -169,3 +169,16 @@ I juga naik (karena investor dapat return lebih stabil)\
 U makin kecil\
 titik stasioner pindah menjauh dari sudut U
 
+**d. 3 Grafik garis aneh**\
+**Rata-rata frekuensi strategi I, T, dan U ketika δ dan M divariasikan.**\
+Tidak peduli apakah M kecil, sedang, atau besar (reward vs punishment), setiap kali δ naik → U selalu turun, I dan T selalu naik.\
+Semakin besar dana insentif, semakin mahal jadi tidak jujur, dan semakin menguntungkan menjadi jujur.
+
+Pada δ yang masih kecil (insentif lemah), U masih dominan di populasi (reward/punishment masih sangat kecil efeknya).
+Kalau T cuma sedikit, reward kecil pun terasa besar karena tidak perlu dibagi banyak orang.
+
+Ini yang menyebabkan trust mulai muncul lebih cepat ketika:\
+δ kecil, dan M besar (reward aktif)
+
+Untuk δ besar, M kecil (punishment aktif lebih sering) menjadi lebih efektif dibanding M besar (reward aktif lebih sering).\
+Pada δ besar, reward seperti memberi permen, tapi punishment seperti menjatuhkan palu godam. Maka U takut dan menghilang lebih cepat terhadap punishment.
