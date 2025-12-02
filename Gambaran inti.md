@@ -96,10 +96,89 @@ Efek diamati: µ besar → distribusi mendekati 1/3 tiap strategi; µ kecil → 
 **9. Investment amount — tv**\
 Peran: unit investasi yang dikirim investor; biasanya set ke tv = 1 di eksperimen (konvensi).
 
-### **6. Kombinasi & Kasus Khusus yang Diuji**
-1. δ kecil vs δ besar: membandingkan efektivitas reward (lebih baik saat δ kecil) vs punishment (lebih baik saat δ besar).
-2. Pure reward (α=0) vs pure punishment (α=1) vs mixed (0<α<1).
-3. M relatif terhadap N: termasuk kasus M > 3N/4 (paper menunjukkan threshold di atas 3/4N membuat perubahan M kurang berpengaruh).
-4. Variasi N sambil pegang δ konstan: lihat bagaimana ukuran grup mengubah dinamika walau insentif tetap.
-5. Sensitivitas terhadap RU/RT: menguji robustness hasil terhadap beda keuntungan T vs U.
-6. Sensitivitas ω & µ: lihat transisi dari drift-dominated → selection-dominated.
+### **6. APA YANG DIANALISIS?**
+Peneliti memakai simulasi matematika (Markov process) untuk melihat:
+1. Seiring waktu, berapa banyak I, T, dan U yang muncul?
+2. Bagaimana perubahan insentif mengubah perilaku kelompok?
+3. Apakah trust bisa naik? Dalam kondisi apa?
+4. Reward lebih efektif atau punishment?
+
+Mereka coba berbagai kondisi:
+- δ = besar insentif
+- M = threshold kapan insentif berubah
+- N = ukuran grup
+- α = mix reward-punishment (pure reward, pure punishment, campuran)
+
+### **7. Hasil Simulasi**
+**a. Kalau δ = 0** (tidak ada insentif sama sekali):\
+Tidak ada reward dan tidak ada punishment.\
+Tidak ada mekanisme yang mendorong orang untuk jujur.\
+Hasilnya:
+- populasi didominasi oleh U (untrustworthy)
+- hampir tidak ada Investor (I)
+- T muncul sedikit tapi kalah oleh U
+
+**b. δ = 2.5 dan δ = 3**\
+Ketika δ mulai sedikit naik (ada insentif kecil): Reward menjadi mekanisme yang dominan kalau M besar.\
+Trustee jujur (T) mendapatkan hadiah tambahan → mereka jadi kompetitif.\
+U mulai menurun\
+I dan T mulai bertambah
+
+Ketika δ makin besar (insentif besar):\
+Reward jadi kurang efektif\
+Punishment jadi sangat kuat (karena “hukuman” yang diambil dari δ besar)\
+M kecil (punishment aktif) langsung menghajar U keras\
+Hasilnya:
+- U turun drastis
+- I dan T bisa hidup bersama (coexistence)
+
+Untuk insentif kecil, lebih baik sistem memakai reward daripada punishment.\
+Kalau insentif besar, punishment lebih kuat daripada reward untuk menghancurkan U.
+Kalau δ kecil → ada sedikit dana\
+→ cukup untuk memberi hadiah kecil\
+→ reward lebih efektif dari punishment
+
+Kalau δ besar → dananya banyak\
+→ punishment jadi keras dan efektif\
+→ U dihancurkan
+
+**c. Perbedaan nilai M (variasi 3, 5, 7) dengan δ konstan**\
+M adalah _threshold_ (ambang batas) jumlah trustee jujur (NT) yang menentukan kapan sistem memakai reward atau punishment.\
+Artinya:
+- Jika NT < M → sistem memberi reward ke trustee jujur (T).
+- Jika NT ≥ M → sistem memberi punishment ke trustee tidak jujur (U).
+
+Saat M = 0:\
+Ambang batas paling rendah. NT ≥ 0 selalu benar → punishment langsung aktif sejak awal.\
+Tapi karena delta kecil, punishment kurang efektif\
+U (untrustworthy) masih banyak → sistem tetap tidak jujur\
+I (investor) paling jarang muncul\
+T naik dikit, tapi ga signifikan
+
+Saat M = 3:\
+Reward mulai sering aktif\
+T meningkat\
+U turun (tapi belum habis)\
+I mulai muncul
+
+Saat M = 7:\
+hampir selalu reward\
+Trustee jujur sering dapat hadiah\
+T naik banyak\
+I juga naik (karena investor dapat return lebih stabil)\
+U makin kecil\
+titik stasioner pindah menjauh dari sudut U
+
+**d. 3 Grafik garis aneh**\
+**Rata-rata frekuensi strategi I, T, dan U ketika δ dan M divariasikan.**\
+Tidak peduli apakah M kecil, sedang, atau besar (reward vs punishment), setiap kali δ naik → U selalu turun, I dan T selalu naik.\
+Semakin besar dana insentif, semakin mahal jadi tidak jujur, dan semakin menguntungkan menjadi jujur.
+
+Pada δ yang masih kecil (insentif lemah), U masih dominan di populasi (reward/punishment masih sangat kecil efeknya).
+Kalau T cuma sedikit, reward kecil pun terasa besar karena tidak perlu dibagi banyak orang.
+
+Ini yang menyebabkan trust mulai muncul lebih cepat ketika:\
+δ kecil, dan M besar (reward aktif)
+
+Untuk δ besar, M kecil (punishment aktif lebih sering) menjadi lebih efektif dibanding M besar (reward aktif lebih sering).\
+Pada δ besar, reward seperti memberi permen, tapi punishment seperti menjatuhkan palu godam. Maka U takut dan menghilang lebih cepat terhadap punishment.
